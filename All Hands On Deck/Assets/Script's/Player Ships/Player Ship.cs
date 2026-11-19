@@ -20,9 +20,6 @@ public class ShipController : MonoBehaviour
     }
     void Update()
     {
-
-
-
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -59,9 +56,5 @@ public class ShipController : MonoBehaviour
                 Debug.Log("yawn");
             }
         }
-
-
-
-
     }
 }
