@@ -2890,21 +2890,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4051283034285160725, guid: aec69e8956b71484ea143fea28a71377, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6617600834834017776, guid: aec69e8956b71484ea143fea28a71377, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6617600834834017776, guid: aec69e8956b71484ea143fea28a71377, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 3840
-      objectReference: {fileID: 0}
-    - target: {fileID: 6617600834834017776, guid: aec69e8956b71484ea143fea28a71377, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 2160
+    - target: {fileID: 8899129657690786417, guid: aec69e8956b71484ea143fea28a71377, type: 3}
+      propertyPath: m_Name
+      value: cards
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
