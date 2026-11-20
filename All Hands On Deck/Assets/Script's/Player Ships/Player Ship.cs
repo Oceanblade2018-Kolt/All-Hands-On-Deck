@@ -14,6 +14,8 @@ public class ShipController : MonoBehaviour
     public GameObject LeftDetect;
     public GameObject RightDetect;
 
+    public GameObject[] AllMoveUI;
+
     public TopMoveDetector topMoveDetection;
     public BottomMoveDetector bottomDetection;
     public LeftMoveDetector leftMoveDetection;
@@ -23,6 +25,8 @@ public class ShipController : MonoBehaviour
 
     public LayerMask detectLayer;
     
+
+
     //GameObject MoveDetector;
 
     private bool shipClicked = false;
@@ -58,37 +62,61 @@ public class ShipController : MonoBehaviour
             {
                 shipClicked = !shipClicked;
 
-                //if (topMoveDetection.TopDetected)
-                TopMoveUI.SetActive(shipClicked);
-                //if (bottomDetection.BottomDetected)
-                BottomMoveUI.SetActive(shipClicked);
-                //if (leftMoveDetection.LeftDetected)
-                LeftMoveUI.SetActive(shipClicked);
-                //if (rightMoveDetection.RightDetected)
-                RightMoveUI.SetActive(shipClicked);
+                if (topMoveDetection.TopDetected)
+                    TopMoveUI.SetActive(shipClicked);
+                else
+                    TopMoveUI.SetActive(false);
+
+                if (bottomDetection.BottomDetected)
+                    BottomMoveUI.SetActive(shipClicked);
+                else
+                    BottomMoveUI.SetActive(false);
+
+                if (leftMoveDetection.LeftDetected)
+                    LeftMoveUI.SetActive(shipClicked);
+                else
+                    LeftMoveUI.SetActive(false);
+
+                if (rightMoveDetection.RightDetected)
+                    RightMoveUI.SetActive(shipClicked);
+                else
+                    RightMoveUI.SetActive(false);
 
 
             }
             if (hit.collider != null && hit.collider.gameObject == LeftMoveUI)
             {
                 this.transform.position = LeftMoveUI.transform.position;
+                DeactivateAllMoveUI();
                 Debug.Log("Left Move UI Clicked");
             }
             if (hit.collider != null && hit.collider.gameObject == RightMoveUI)
             {
                 this.transform.position = RightMoveUI.transform.position;
+                DeactivateAllMoveUI();
                 Debug.Log("Right Move UI Clicked");
             }
             if (hit.collider != null && hit.collider.gameObject == TopMoveUI)
             {
                 this.transform.position = TopMoveUI.transform.position;
+                DeactivateAllMoveUI();
                 Debug.Log("Top Move UI Clicked");
             }
             if (hit.collider != null && hit.collider.gameObject == BottomMoveUI)
             {
                 this.transform.position = BottomMoveUI.transform.position;
+                DeactivateAllMoveUI();
                 Debug.Log("Bottom Move UI Clicked");
             }
         }
     }
+
+    private void DeactivateAllMoveUI()
+    {
+        foreach (GameObject obj in AllMoveUI)
+        {
+            obj.SetActive(false);
+        }
+    }
+
 }

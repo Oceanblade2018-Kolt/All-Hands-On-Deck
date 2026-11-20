@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LeftMoveDetector : MonoBehaviour
@@ -9,18 +10,28 @@ public class LeftMoveDetector : MonoBehaviour
     {
 
     }
-
+    
     // Update is called once per frame
     void Update()
     {
+
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.name == "DetectZone")
+        {
+            Debug.Log("Left Move Is Detecting Move Space");
+            LeftDetected = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "Move Spaces")
         {
-            LeftDetected = true;
+            //Debug.Log("Bottom Move Exited");
+            LeftDetected = false;
         }
     }
 }

@@ -27,7 +27,16 @@ public class TopMoveDetector : MonoBehaviour
     {
         if (collision.gameObject.tag == "Move Spaces")
         {
+            Debug.Log("Top Move Is Detecting Move Space");
             TopDetected = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Move Spaces")
+        {
+            //Debug.Log("Bottom Move Exited");
+            TopDetected = false;
         }
     }
 }

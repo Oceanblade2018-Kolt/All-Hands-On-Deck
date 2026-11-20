@@ -20,7 +20,16 @@ public class RightMoveDetector : MonoBehaviour
     {
         if (collision.gameObject.tag == "Move Spaces")
         {
+            Debug.Log("Right Move Is Detecting Move Space");
             RightDetected = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Move Spaces")
+        {
+            //Debug.Log("Bottom Move Exited");
+            RightDetected = false;
         }
     }
 }
