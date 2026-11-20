@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 822665223007153585}
-  - component: {fileID: 6339626621042914146}
+  - component: {fileID: 1037522498390440381}
   m_Layer: 0
-  m_Name: Test GM
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6339626621042914146
+--- !u!114 &1037522498390440381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023565699523670151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9a4ac01e45a4f4c83fbeb8f33255f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 28603aef659979d4a8ce895a638bbe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestGM
   PauseMenu: {fileID: 0}
-  coinAmmount: {fileID: 0}
+  ammount: {fileID: 0}
   coin: {fileID: 0}
   paused: 0
