@@ -10,6 +10,12 @@ EditorBuildSettings:
     guid: 1638a4cc9ec3a01438d09ad5c7ba853f
   - enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    path: Assets/Scenes/Test LVL's/LVL.unity
+    guid: 006f3c527aae7bb4b9a1ff10df8cf76a
+  - enabled: 1
+>>>>>>> 7fb3e1fc82d15b16f333b575fc40afefab58589e
 =======
     path: Assets/Scenes/Test LVL's/LVL.unity
     guid: 006f3c527aae7bb4b9a1ff10df8cf76a

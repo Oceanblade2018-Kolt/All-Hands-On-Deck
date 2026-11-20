@@ -824,6 +824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TopMoveDetector
   TopDetected: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1091396529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,6 +923,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c3c9feb6642f5e40abb096e2b38cf95, type: 3}
 =======
+=======
+>>>>>>> 7fb3e1fc82d15b16f333b575fc40afefab58589e
 --- !u!114 &1083036990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,6 +1100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_ActionId: 32b35790-4ed0-4e9a-aa41-69ac6d629449
+<<<<<<< HEAD
+>>>>>>> 7fb3e1fc82d15b16f333b575fc40afefab58589e
+=======
 >>>>>>> 7fb3e1fc82d15b16f333b575fc40afefab58589e
 --- !u!1001 &1302831276
 PrefabInstance:
@@ -1375,7 +1381,10 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7fb3e1fc82d15b16f333b575fc40afefab58589e
 --- !u!114 &1483954049
 MonoBehaviour:
   m_ObjectHideFlags: 0
