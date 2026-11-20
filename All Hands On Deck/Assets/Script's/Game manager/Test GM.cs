@@ -30,7 +30,6 @@ public class TestGM : MonoBehaviour
 
             PauseMenu = GameObject.FindGameObjectWithTag("Pause");
 
-
             PauseMenu.SetActive(false);
 
             //enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
@@ -69,7 +68,6 @@ public class TestGM : MonoBehaviour
 
                 healthBar.enabled = true;
 
-
             }
             else
             {
@@ -97,18 +95,18 @@ public class TestGM : MonoBehaviour
         PauseMenu.SetActive(paused);
     }
 
-    /*public void LoadLevel(int levelID) //modify for seed system
+    public void LoadLevel(int levelID) //modify for seed system
     {
         if (levelID >= SceneManager.sceneCountInBuildSettings)
             Debug.Log("Scene ID too high: " + levelID);
        else
-            //SceneManager.LoadScene(levelID);
-    }*/
+            SceneManager.LoadScene(levelID);
+    }
 
-    /*public void MainMenu()
+    public void MainMenu()
     {
         LoadLevel(0);
-    }*/
+    }
 
     public void Quit()
     {
