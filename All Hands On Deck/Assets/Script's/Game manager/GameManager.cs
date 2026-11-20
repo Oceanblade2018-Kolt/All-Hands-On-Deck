@@ -32,9 +32,9 @@ public class TestGM : MonoBehaviour
             
             PauseMenu.SetActive(false);
 
-            ammount = GameObject.Find("ammount").GetComponent<TextMeshProUGUI>();
+            //ammount = GameObject.Find("ammount").GetComponent<TextMeshProUGUI>();
 
-            coin = GameObject.Find("coin").GetComponent<Image>();
+            //coin = GameObject.Find("coin").GetComponent<Image>();
 
             //enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         }
