@@ -16,6 +16,13 @@ public class TopMoveDetector : MonoBehaviour
 
     }
 
+    /*private void OnCollisionEnter(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Move Spaces")
+        {
+            TopDetected = true;
+        }
+    }*/
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Move Spaces")
