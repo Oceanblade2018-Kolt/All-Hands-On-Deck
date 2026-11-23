@@ -24,9 +24,7 @@ public class ShipController : MonoBehaviour
     public LeftMoveDetector leftMoveDetection;
     public RightMoveDetector rightMoveDetection;
 
-    public float rayDistance = 1f;
-
-    public LayerMask detectLayer;
+    public float health = 3f;
     
 
 
