@@ -15,6 +15,10 @@ public class TestGM : MonoBehaviour
 
     public bool paused = false;
 
+    public Image healthBar;
+
+    public EnemyShip enemy;
+
     //public bool enemiesGone = false;
     //public int enemyCount = 0;
 
@@ -27,9 +31,10 @@ public class TestGM : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex != 0)
         {
             //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-
+            enemy = GameObject.FindGameObjectWithTag("Enemy Ship").GetComponent<EnemyShip>();
             PauseMenu = GameObject.FindGameObjectWithTag("Pause");
-            
+            healthBar = GameObject.Find("HB").GetComponent<Image>();
+
             PauseMenu.SetActive(false);
 
             //ammount = GameObject.Find("ammount").GetComponent<TextMeshProUGUI>();
@@ -58,6 +63,8 @@ public class TestGM : MonoBehaviour
                 PauseMenu.SetActive(false);
             }
 
+            //healthBar.fillAmount = (float)enemy.health / (float)enemy.maxHealth;
+
             /*if (enemyCount <= 0)
             {
                 enemiesGone = true;
@@ -82,6 +89,7 @@ public class TestGM : MonoBehaviour
 
             */
         }
+        healthBar.fillAmount = (float)enemy.health/* / (float)enemy.maxHealth*/;
     }
 
     public void Pause()

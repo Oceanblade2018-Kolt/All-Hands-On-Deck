@@ -25,8 +25,10 @@ public class ShipController : MonoBehaviour
     public RightMoveDetector rightMoveDetection;
 
     public float health = 3f;
-    
 
+    public GameObject[] EnemysAttackOutline;
+
+    EnemyShip enemy;
 
     //GameObject MoveDetector;
 
@@ -44,6 +46,9 @@ public class ShipController : MonoBehaviour
 
     void Update()
     {
+
+        EnemysAttackOutline = GameObject.FindGameObjectsWithTag("Enemy Attack Outline");
+
         /*if (topMoveDetection.TopDetected)
         {
             Debug.Log("TopDetectWorking");
@@ -103,6 +108,13 @@ public class ShipController : MonoBehaviour
                 this.transform.position = BottomMoveUI.transform.position;
                 DeactivateAllMoveUI();
                 Debug.Log("Bottom Move UI Clicked");
+            }
+            foreach (GameObject obj in EnemysAttackOutline)
+            {
+                if (hit.collider != null && hit.collider.gameObject == obj)
+                {
+                    enemy.health--;
+                }
             }
         }
 
@@ -191,9 +203,20 @@ public class ShipController : MonoBehaviour
 
 
     }
-    public void AttackLog()
+    public void Attack()
     {
-        Debug.Log("Attack Button Clicked");
+
+        foreach (GameObject obj in EnemysAttackOutline)
+        {
+            obj.SetActive(true);
+        }
+
+
+
+        /*foreach (GameObject obj in EnemysAttackOutline)
+        {
+            obj.SetActive(false);
+        }*/
     }
 
 }

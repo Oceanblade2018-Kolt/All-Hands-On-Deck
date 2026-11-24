@@ -8,6 +8,8 @@ TagManager:
   - Move Spaces
   - ammount
   - coin
+  - Enemy Ship
+  - Enemy Attack Outline
   layers:
   - Default
   - TransparentFX
